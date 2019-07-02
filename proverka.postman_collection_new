@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "202d892c-0786-4030-a74f-b8213b612870",
+		"name": "proverka",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://onliner.by",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "d5a195f0-badb-4a8a-8c48-efe0e260d8a9",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Response time is less than 20ms\", function () {",
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"string_you_want_to_search\");",
+							"});",
+							"    pm.expect(pm.response.responseTime).to.be.below(20);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://onliner.by",
+					"protocol": "https",
+					"host": [
+						"onliner",
+						"by"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
